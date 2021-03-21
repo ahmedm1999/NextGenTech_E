@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextGenTech | QA & Testing</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+     integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.9.0/devicon.min.css">
+    <link rel="stylesheet" href="../web_dev/web_development_style.css">
+    <link rel="stylesheet" href="../mobile_dev/mobile_development_style.css">
+    <link rel="stylesheet" href="qa_test_style.css">
+</head>
+<body>
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v9.0'
+        });
+      };
+
+      (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Your Chat Plugin code -->
+    <div class="fb-customerchat"
+      attribution="setup_tool"
+      page_id="116341136944431"
+theme_color="#9d8df7"
+logged_in_greeting="Hi! How can we help you? "
+logged_out_greeting="Hi! How can we help you? ">
+    </div>
+
+    <!-- main landing  -->
+    <section class="main-landing">
+        <!-- navbar -->
+        <div class="nav-bar">
+            <i class="fas fa-bars" id="open-side-down"></i>
+            <div class="nav-bar-logo">
+                <img src="../pics/logomaindes.png" alt="logo" width="100" height="100">
+                <p class="logo-txt">NextGenTech</p>
+            </div>
+            <!-- navbar items -->
+            <ul class="nav-bar-items">
+                <li><a href="../../index.html">Home</a></li>
+                <li id="serv">Services <i class="fas fa-chevron-down" style="margin-left: 10px;" id="arrow"></i>
+                    
+                </li>
+                <li><a href="../../about/index.html">About Us</a></li>
+                <li><a href="../../contact/index.html"><button class="contact-btn">Contact Us</button></a></li>
+                
+            </ul>
+        </div>
+    </section>
+    <section class="welcome-area-grid">
+        <div class="grid-item">
+            <a href="../../index.html">Home </a><span>/ Services / </span><a href="index.html">Quality Assurance</a>
+        </div>  
+        <div class="grid-item">
+            <p>Software Testing and QA Services.</p>
+            <p>Ensuring high quality of your software product.</p>
+            
+        </div>
+        <div class="grid-item">
+            <a href="../../contact/index.html"><button id="welc-area-btn">Get Started!</button></a>
+        </div>
+        <div class="grid-item">
+            <img src="../../pic/device.png" alt="">
+        </div>
+    </section>
+    <!-- Sidw Down -->
+    <section id="sideDownSec">
+        <div class="sidedown" id="side-down">
+            <i class="fas fa-times" id="close-side-down"></i>
+            <ul>
+                <h2>Pages</h2>
+                <a href="../../index.html"><li>Home</li></a>
+                <a id="side-menu-serv" data-open="false"><li>Services <i class="fas fa-chevron-down" id="side-arrow" style="margin-left: 10px;"></i></li></a>
+                <ul class="services" id="side-serv">
+                    <a href="../web_dev/index.html">
+                        <li>Web Development</li>
+                    </a>
+                    <a href="index.html">
+                        <li>Mobile Development</li>
+                    </a>
+                    <a href="../desktopDev/index.html">
+                        <li>Desktop Apps Development</li>
+                    </a>
+                    <a href="../seo/index.html"><li>Search Engine Optimization(SEO)</li></a>
+                    <a href="#">
+                        <li>Quality Assurance & Testing</li>
+                    </a>
+                    <a href="#">
+                        <li>Social Media & Digital Marketing</li>
+                    </a>
+                </ul>
+                <a href="../../about/index.html"><li>About Us</li></a>
+                <a href="../../contact/index.html"><li><button class="contact-btn">Contact Us</button></li></a>
+                <h2>social</h2>
+                <a href="#"><li>Facebook</li></a>
+                <a href="#"><li>Instagram</li></a>
+                <a href="#"><li>Twitter</li></a>
+                <h2>Links</h2>
+                <a href="#"><li>Privacy & Policy</li></a>
+                <a href="#"><li>Careers</li></a>
+                <a href="#"><li>Partners</li></a>
+            </ul>
+        </div>
+    </section>
+    <!-- Services drop Down -->
+    <div class="drop-dwon-grid" id="drop" data-open="false">
+        <div class="grid-item">
+            <a href="../web_dev/index.html" class="service-link">
+                <div class="service-card">
+                    <div class="card-img">
+                        <img src="../../pic/seo.png" alt="">
+                    </div> 
+                    <div class="card-tit">
+                        <p>Web Development</p>
+                    </div>
+                </div>
+            </a>
+            <a href="../mobile_dev/index.html" class="service-link">
+                <div class="service-card">
+                    <div class="card-img">
+                        <img src="../../pic/test (1).png" alt="">
+                    </div> 
+                    <div class="card-tit">
+                        <p>Mobile Apps Development</p>
+                    </div>
+                </div>
+            </a>
+            <a href="../desktopDev/index.html" class="service-link">
+                <div class="service-card">
+                    <div class="card-img">
+                        <img src="../../pic/desktop-computer.png" alt="">
+                    </div> 
+                    <div class="card-tit">
+                        <p>Desktop Apps Development</p>
+                    </div>
+                </div>
+            </a>
+            <a href="../seo/index.html" class="service-link">
+                <div class="service-card">
+                    <div class="card-img">
+                        <img src="../../pic/seo-search-symbol.png" alt="">
+                    </div> 
+                    <div class="card-tit">
+                        <p>Search Engine Optimization</p>
+                    </div>
+                </div>
+            </a>
+            <a href="../qa_test/index.html" class="service-link">
+                <div class="service-card">
+                    <div class="card-img">
+                        <img src="../../pic/test.png" alt="">
+                    </div> 
+                    <div class="card-tit">
+                        <p>Quality Assurance & Testing</p>
+                    </div>
+                </div>
+            </a>
+            <a href="../social_media/index.html" class="service-link">
+                <div class="service-card">
+                    <div class="card-img">
+                        <img src="../../pic/bullhorn.png" alt="">
+                    </div> 
+                    <div class="card-tit">
+                        <p>Social Media & Marketing</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- SVG -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" id="svg">
+        <path fill="#0e141e" fill-opacity="1" d="M0,288L1440,0L1440,0L0,0Z"></path>
+    </svg>
+    <section class="test-type-grid">
+        <div class="grid-item-flex">
+            <div class="flex-item">
+                <div class="item-tit">
+                    Independent QA.
+                </div>
+                <div class="item-txt">
+                    <p>
+                        We deliver independent QA services for any third-party software solution to give you better control of the application quality, help evaluate the product’s 
+                        compliance with the original requirements and give you valuable insights into end user impressions of the product.
+                    </p>
+                </div>
+            </div>
+            <div class="flex-item">
+                <div class="item-tit">
+                    Integrated testing.
+                </div>
+                <div class="item-txt">
+                    <p>
+                        Any software development project at nextGenTech has an integral testing part within. 
+                        Before we release your software, it goes through a thorough testing process to ensure it is working 
+                        in the intended manner thus ensuring deployment in the most efficient way on your side.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="soft-test-grid">
+        <div class="grid-item">
+            <p>Software testing</p>
+        </div>
+        <div class="grid-item-flex">
+            <div class="flex-item">
+                <div class="item-tit">
+                    Full-Cycle QA.
+                </div>
+                <div class="item-txt">
+                    <p>
+                        From requirement analysis through development, implementation and maintenance of solutions, we apply the right type of testing, 
+                        either manual or automated, matching each particular stage of your software product lifecycle.
+                    </p>
+                </div>
+            </div>
+            <div class="flex-item">
+                <div class="item-tit">
+                    Custom testing.
+                </div>
+                <div class="item-txt">
+                    <p>
+                        From web, desktop, mobile applications to server-side systems and devices, we create a comprehensive testing mix for each application to ensure consistent quality. We test both end-to-end solutions and their discrete elements/aspects.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div></div>
+        </div>
+        <div class="grid-item">
+            <ul class="elements_list testing_case">
+              <li>
+                <div class="elements_head"><i class="icon icon-secur_testing"><svg width="17.2" height="24.2" viewBox="0 0 17.2 24.2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="m15.2,23.7l-13.2,0c-0.9,0 -1.5,-0.7 -1.5,-1.6l0,-8.8c0,-0.9 0.7,-1.6 1.5,-1.6l13.1,0c0.8,0 1.5,0.7 1.5,1.6l0,8.8c0.1,0.9 -0.6,1.6 -1.4,1.6z" stroke-miterlimit="10" stroke="#FFFFFF" fill="none"></path><path d="m2,11.7l0,-3.6c0,-4.2 3,-7.6 6.6,-7.6c3.6,0 6.6,3.4 6.6,7.6l0,3.6" stroke-miterlimit="10" stroke="#FFFFFF" fill="none"></path><path d="m9.5,17.7c0.2,-0.2 0.3,-0.5 0.3,-0.8c0,-0.7 -0.5,-1.2 -1.2,-1.2s-1.2,0.5 -1.2,1.2c0,0.3 0.1,0.6 0.3,0.8l0.1,0.2l0,0.2c0,0.4 0.4,0.8 0.8,0.8c0.4,0 0.8,-0.4 0.8,-0.8l0.1,-0.4l0,0z" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#FFFFFF" fill="none"></path></svg></i><span>Security testing</span></div>
+              </li>
+              <li>
+                <div class="elements_head"><i class="icon icon-compab_testing"><svg width="13.2" height="24.2" viewBox="0 0 13.2 24.2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><line y2="2.1" x2="7.8" y1="2.1" x1="5.4" stroke-linejoin="round" stroke-linecap="round" stroke="#FFFFFF" fill="none"></line><g><line y2="3.7" x2="12.7" y1="3.7" x1="0.5" stroke-linejoin="round" stroke-linecap="round" stroke="#FFFFFF" fill="none"></line><line y2="18.9" x2="12.7" y1="18.9" x1="0.5" stroke-linejoin="round" stroke-linecap="round" stroke="#FFFFFF" fill="none"></line><ellipse ry="0.8" rx="0.8" cy="21.3" cx="6.6" stroke-miterlimit="10" stroke="#FFFFFF" fill="none"></ellipse><path d="m11.1,23.7l-9,0c-0.9,0 -1.6,-0.7 -1.6,-1.6l0,-20c0,-0.9 0.7,-1.6 1.6,-1.6l8.9,0c0.9,0 1.6,0.7 1.6,1.6l0,20c0.1,0.9 -0.6,1.6 -1.5,1.6z" stroke-linejoin="round" stroke-linecap="round" stroke="#FFFFFF" fill="none"></path></g></svg></i><span>Compatibility testing</span></div>
+              </li>
+            </ul>
+            <ul class="elements_list testing_case">
+                <li>
+                    <div class="elements_head"><i class="icon icon-usab_testing"><svg width="24" height="19" viewBox="0 0 24 19" xmlns="http://www.w3.org/2000/svg"><path d="m22.9,18.5l-21.8,0c-0.3,0 -0.6,-0.3 -0.6,-0.6l0,-16.8c0,-0.3 0.3,-0.6 0.6,-0.6l21.7,0c0.3,0 0.6,0.3 0.6,0.6l0,16.8c0.1,0.3 -0.2,0.6 -0.5,0.6z" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#FFFFFF" fill="none"></path><line y2="3.6" x2="23.5" y1="3.6" x1="0.5" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#FFFFFF" fill="none"></line><ellipse ry="0.4" rx="0.4" cy="2.1" cx="21.9" fill="#FFFFFF"></ellipse><line y2="2.1" x2="16.4" y1="2.1" x1="2.9" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#FFFFFF" fill="none"></line><ellipse ry="0.4" rx="0.4" cy="2.1" cx="20.3" fill="#FFFFFF"></ellipse><ellipse ry="0.4" rx="0.4" cy="2.1" cx="18.7" fill="#FFFFFF"></ellipse><rect height="2.3" width="18.2" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#FFFFFF" fill="none" y="6" x="2.9"></rect><rect height="2.3" width="7.9" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#FFFFFF" fill="none" y="9.9" x="2.9"></rect><rect height="2.3" width="7.9" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#FFFFFF" fill="none" y="9.9" x="13.2"></rect><rect height="2.3" width="18.2" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#FFFFFF" fill="none" y="13.8" x="2.9"></rect></svg></i><span>Usability testing</span></div>
+                  </li>
+                <li>
+                  <div class="elements_head"><i class="icon icon-perform_testing"><svg width="23.2" height="23.2" viewBox="0 0 23.2 23.2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><circle r="11.1" cy="11.6" cx="11.6" stroke-linejoin="round" stroke-linecap="round" stroke="#FFFFFF" fill="none"></circle><line y2="15.6" x2="18.6" y1="15.6" x1="18.6" stroke-linejoin="round" stroke-linecap="round" stroke="#FFFFFF" fill="none"></line><path d="m15.6,18.6c-1.2,0.7 -2.6,1.1 -4,1.1c-0.7,0 -1.4,-0.1 -2.1,-0.3" stroke-dasharray="0,5.505" stroke-linejoin="round" stroke-linecap="round" stroke="#FFFFFF" fill="none"></path><line y2="18.6" x2="7.6" y1="18.6" x1="7.6" stroke-linejoin="round" stroke-linecap="round" stroke="#FFFFFF" fill="none"></line><path d="m13,13c-0.8,0.8 -2,0.8 -2.7,0c-0.8,-0.8 -0.8,-2 0,-2.7c0.8,-0.8 7.1,-4.4 7.1,-4.4s-3.6,6.3 -4.4,7.1z" stroke-linejoin="round" stroke-linecap="round" stroke="#FFFFFF" fill="none"></path><path d="m18.9,8.1c0.5,1 0.8,2.2 0.8,3.4c0,0 0,0.5 0,0.5" stroke-linejoin="round" stroke-linecap="round" stroke="#FFFFFF" fill="none"></path><path d="m4.3,15.1c-0.5,-1 -0.8,-2.2 -0.8,-3.5c0,-4.4 3.6,-8 8,-8c1.2,0 2.4,0.3 3.4,0.8" stroke-linejoin="round" stroke-linecap="round" stroke="#FFFFFF" fill="none"></path></svg></i><span>Performance testing</span></div>
+                </li>
+            </ul>
+            <ul class="elements_list testing_case">
+                <li>
+                    <div class="elements_head"><i class="icon icon-func_testing"><svg width="23.2" height="23.2" viewBox="0 0 23.2 23.2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><ellipse ry="3.2" rx="3.2" cy="14.3" cx="14.2" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#FFFFFF" fill="none"></ellipse><path d="m20.5,15.7l2.3,-0.3l0,-2.2l-2.3,-0.3c-0.2,-0.7 -0.4,-1.4 -0.8,-2l1.3,-1.8l-1.6,-1.6l-1.8,1.4c-0.6,-0.4 -1.2,-0.6 -1.9,-0.8l-0.3,-2.3l-2.2,0l-0.3,2.3c-0.7,0.2 -1.4,0.4 -2,0.8l-1.8,-1.3l-1.6,1.5l1.4,1.8c-0.4,0.6 -0.7,1.3 -0.8,2l-2.2,0.3l0,2.2l2.2,0.3c0.2,0.7 0.4,1.4 0.8,2l-1.3,1.8l1.6,1.6l1.8,-1.4c0.6,0.4 1.2,0.6 1.9,0.8l0.3,2.2l2.2,0l0.3,-2.2c0.7,-0.2 1.4,-0.4 2,-0.8l1.8,1.3l1.6,-1.6l-1.4,-1.8c0.3,-0.5 0.6,-1.2 0.8,-1.9z" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#FFFFFF" fill="none"></path><path d="m5.8,8.9c-0.9,-0.4 -1.5,-1.2 -1.5,-2.2c0,-1.3 1.1,-2.3 2.4,-2.3c1,0 1.8,0.6 2.2,1.4" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#FFFFFF" fill="none"></path><path d="m11.2,5.6c-0.1,-0.5 -0.3,-1 -0.6,-1.4l1,-1.3l-1.1,-1.1l-1.3,1c-0.5,-0.3 -1,-0.5 -1.5,-0.6l-0.2,-1.7l-1.6,0l-0.2,1.7c-0.5,0.1 -1,0.3 -1.4,0.6l-1.3,-1l-1.3,1.1l1,1.3c-0.2,0.4 -0.4,0.9 -0.6,1.5l-1.6,0.2l0,1.6l1.6,0.2c0.1,0.5 0.3,1 0.6,1.4l-1,1.3l1.1,1.1l1.3,-1c0.4,0.3 0.9,0.5 1.4,0.6" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#FFFFFF" fill="none"></path></svg></i><span>Functional testing</span></div>
+                </li>
+                <li>
+                  <div class="elements_head"><i class="icon icon-local_testing"><svg width="24.2" height="24.2" viewBox="0 0 24.2 24.2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><circle r="11.6" cy="12.1" cx="12.1" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#FFFFFF" fill="none"></circle><path d="m14.3,7.8c-1.1,-1.8 -1.8,-3.9 -1.8,-6.1c0,-0.4 0,-0.8 0.1,-1.2" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#FFFFFF" fill="none"></path><path d="m23.6,13.3c-2.9,-0.1 -5.5,-1.3 -7.4,-3.1" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#FFFFFF" fill="none"></path><path d="m15,18.6c-0.9,0.2 -1.9,0.3 -2.9,0.3c-4.8,0 -9.1,-2.4 -11.6,-6.2" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#FFFFFF" fill="none"></path><path d="m23.6,12.8c-1.4,2 -3.3,3.7 -5.6,4.7" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#FFFFFF" fill="none"></path><path d="m8.1,8c2.7,-3.1 6.6,-5.1 11.1,-5.1" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#FFFFFF" fill="none"></path><path d="m4.9,21.2c-0.3,-1.1 -0.4,-2.3 -0.4,-3.5c0,-2.5 0.6,-4.8 1.7,-6.8" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#FFFFFF" fill="none"></path><path d="m15.2,19.2c-2,1.3 -4.5,2.1 -7.1,2.1c-1.3,0 -2.5,-0.2 -3.7,-0.5" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#FFFFFF" fill="none"></path><path d="m20.8,4.4c0.3,1.2 0.5,2.4 0.5,3.7c0,3.5 -1.3,6.6 -3.5,9" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#FFFFFF" fill="none"></path><path d="m8.5,9.3c0,0.9 -0.7,1.6 -1.6,1.6c-0.3,0 -0.5,-0.1 -0.7,-0.2c-0.5,-0.3 -0.9,-0.8 -0.9,-1.4c0,-0.9 0.7,-1.6 1.6,-1.6c0.9,0 1.6,0.7 1.6,1.6z" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#FFFFFF" fill="none"></path><circle r="1.6" cy="18.1" cx="16.5" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#FFFFFF" fill="none"></circle><path d="m16.5,9.3c0,0.9 -0.7,1.6 -1.6,1.6c-0.3,0 -0.5,-0.1 -0.7,-0.2c-0.5,-0.3 -0.9,-0.8 -0.9,-1.4c0,-0.9 0.7,-1.6 1.6,-1.6c0.9,0 1.6,0.7 1.6,1.6z" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke="#FFFFFF" fill="none"></path></svg></i><span>Localization testing</span></div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="cms-grid">
+        <div class="grid-item">
+            Automation Testing Services.
+        </div>
+        <div class="grid-item">
+            <img src="../../pic/futuristic-industry-4-0-engineering-concept_31965-4075.jpg" alt="">
+            <p>Our Automation testing services will allow you to significantly speed up and structurize your testing processes and receive reliable solutions.
+                <br/><br/>
+                Automation testing is a process that reduces the time for manual testing and replaces it with the structured testing approach which emulates the final user behavior in an automated way.
+            </p>
+        </div>
+    </section>
+    <div class="container">
+        <span class="big-circle"></span>
+        <img src="img/shape.png" class="square" alt="" />
+        <div class="form">
+          <div class="contact-info">
+            <h3 class="title">Let's get in touch</h3>
+            <p class="text">
+                Have Some Feedback for as ?
+                Want to know more ?
+            </p>
+  
+            <div class="info">
+              <div class="information">
+                <p>Irbid - Jordan</p>
+              </div>
+              <div class="information">
+                <p>nextg307@gmail.com</p>
+              </div>
+              <div class="information">
+                <p>+962 795 023 801</p>
+              </div>
+            </div>
+  
+            <div class="social-media">
+              <p>Connect with us :</p>
+              <div class="social-icons">
+                <a href="#">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+  
+          <div class="contact-form">
+            <span class="circle one"></span>
+            <span class="circle two"></span>
+  
+            <form action="index.html" autocomplete="off">
+              <!-- <h3 class="title">Contact us</h3> -->
+              <div class="input-container">
+                <input type="text" name="name" class="input" required data-error="Please, enter your name"/>
+                <label for="">Name</label>
+                <span>Your name</span>
+                <div class="error-data"></div>
+              </div>
+              <div class="input-container">
+                <input type="email" name="email" class="input" required data-error="Please, enter your E-mail address to contact you"/>
+                <label for="">Email</label>
+                <span>Email</span>
+                <div class="error-data"></div>
+              </div>
+              <div class="input-container">
+                <input type="tel" name="phone" class="input" required data-error="Please Enter your phone number to contact you"/>
+                <label for="">Phone</label>
+                <span>Phone</span>
+                <div class="error-data"></div>
+              </div>
+              <div class="input-container textarea">
+                <textarea name="message" class="input" required data-error="Enter your idea text message to hear you!"></textarea>
+                <label for="">Text your idea !</label>
+                <span>Message</span>
+                <div class="error-data"></div>
+              </div>
+              <div class="files-container">
+                <input type="file" id="file" multiple>
+                <label for="file" id="file-uploader">Attach File(s)</label>
+                <!-- <div id="no-file" class="no-file">No file choosen</div> -->
+              </div>
+              <br/>
+              <div id="uploaded-files">
+                  <ul class="file-container">
+                      <li id="default-file">No File(s) Chosen</li>
+                  </ul>
+              </div>
+              <!-- <div class="priv">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, error.</div> -->
+              <input type="submit" value="Agree & Send" class="btn" />
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
+      <div class="footer-line"></div>
+      <section class="footer-grid">
+          <div class="grid-item">
+              <div class="footer-logo">
+                  <img src="../pics/logomaindes.png" alt="logo">
+                  <h3>NextGenTech</h3>
+              </div>
+          </div>
+          <div class="grid-item">
+              <div class="footer-links">
+                  <h5>Pages</h5>
+                  <ul>
+                      <li><a href="../../index.html">Home</a></li>
+                      <li><a href="../../about/index.html">About Us</a></li>
+                      <li><a href="../../contact/index.html">Contact Us</a></li>
+                  </ul>
+              </div>
+          </div>
+          <div class="grid-item">
+            <div class="footer-links">
+                <h5>Services</h5>
+                <ul>
+                    <li><a href="../services/web_dev/index.html">Web Development</a></li>
+                    <li><a href="../mobile_dev/index.html">Mobile Apps Development</a></li>
+                    <li><a href="../desktopDev/index.html">Desktop Apps Development</a></li>
+                    <li> <a href="../seo/index.html">Search Engine Optimization(SEO) </a></li>
+                    <li> <a href="../qa_test/index.html">Quality Assurance & Testing</a> </li>
+                    <li> <a href="#">Social Media & Digital Marketing</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="footer-links">
+                <h5>Social</h5>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="footer-links">
+                <h5>Links</h5>
+                <ul>
+                    <li><a href="#">Privacy & Policy</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Partners</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="grid-item">
+            <small class="copy-footer">&copy Copy Right Reserved <i class="fas fa-love"></i> <b>NEXTGENTECH</b> <span id="copy-year"></span></small>
+        </div>
+      </section>
+    <script src="../web_dev/web_development_app.js"></script>
+</body>
+</html>
